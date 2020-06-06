@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CleanArchitecture.Infrastructure.Image
+namespace CleanArchitecture.Infrastructure.Images
 {
     public class Upload : IUpload
     {

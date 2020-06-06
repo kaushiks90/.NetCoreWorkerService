@@ -1,7 +1,7 @@
 ﻿using CleanArchitecture.Core.Interfaces;
 using CleanArchitecture.Core.Services;
 using CleanArchitecture.Infrastructure.Http;
-using CleanArchitecture.Infrastructure.Image;
+using CleanArchitecture.Infrastructure.Images;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CleanArchitecture.Infrastructure
