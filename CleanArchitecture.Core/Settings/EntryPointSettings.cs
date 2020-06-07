@@ -4,7 +4,6 @@
     {
         public string ApiUrl { get; set; }
         public string UserID { get; set; }
-
-        public string IntervalTime { get; set; }
+       
     }
 }

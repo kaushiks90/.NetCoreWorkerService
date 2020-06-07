@@ -37,7 +37,7 @@ namespace CleanArchitecture.Core.Services
             try
             {
                 // capture the image
-                _capture.CaptueImage();
+                _capture.CaptueImage(_settings);
 
                 //check the directory for changes
                 //If the directory has a change
@@ -47,18 +47,13 @@ namespace CleanArchitecture.Core.Services
 
                 // check 1 URL in the message
                 //var statusHistory = await _urlStatusChecker.CheckUrlAsync(message, "");
-
                 // record HTTP status / response time 
                 // _logger.LogInformation("Record HTTP status ,response time {time}", statusHistory);
             }
-#pragma warning disable CA1031 // Do not catch general exception types
             catch (Exception ex)
             {
                 _logger.LogError(ex, $"{nameof(EntryPointService)}.{nameof(ExecuteAsync)} threw an exception.");
-                // TODO: Decide if you want to re-throw which will crash the worker service
-                //throw;
             }
-#pragma warning restore CA1031 // Do not catch general exception types
         }
     }
 }
